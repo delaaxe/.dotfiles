@@ -1,0 +1,21 @@
+alias ..="cd .."
+alias ...="cd ../.."
+
+alias l='ls -lahG'
+alias ll='ls -lahG'
+alias v='mvim --remote-silent'
+alias g='git'
+alias c="pbcopy"
+
+alias localip="ipconfig getifaddr en1"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias ip="curl -s http://checkip.dyndns.com/ | sed 's/[^0-9\.]//g'"
+alias hn='~/.dotfiles/hn.sh -c -l 6'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"

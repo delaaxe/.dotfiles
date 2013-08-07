@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/axel'
+let g:netrw_dirhist_2='/Users/axel/Dropbox/mau5design/lab/js/plugin'
+let g:netrw_dirhist_3='/Users/axel'
+let g:netrw_dirhist_4='/Users/axel/Dropbox/mau5design/proj/coffee-tags/test'
