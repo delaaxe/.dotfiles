@@ -219,6 +219,8 @@ imap <left> <nop>
 imap <right> <nop>
 "fix ctrl-i
 "unmap <c-i>
+" eclipse-style auto completion
+imap <C-space> <cr>
 
 " Autocommands
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

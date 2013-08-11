@@ -16,13 +16,12 @@ function path() {
 }
 
 function o() {
+  local target="$@"
   if [[ "$@" == "" ]]; then #no args
-    [[ ${OSTYPE//[0-9.]/} == "darwin" ]] && open .
-    [[ ${OSTYPE//[0-9.]/} == "linux-gnu" ]] && gnome-open .
-  else
-    [[ ${OSTYPE//[0-9.]/} == "darwin" ]] && open "$@"
-    [[ ${OSTYPE//[0-9.]/} == "linux-gnu" ]] && gnome-open "$@"
+    target="."
   fi
+  [[ ${OSTYPE//[0-9.]/} == "darwin" ]] && open "$target"
+  [[ ${OSTYPE//[0-9.]/} == "linux-gnu" ]] && gnome-open "$target"
 }
 
 function server() {
