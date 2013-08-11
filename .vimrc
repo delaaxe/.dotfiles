@@ -158,7 +158,7 @@ inoremap JK <esc>
 inoremap kj <esc>
 inoremap KJ <esc>
 " don't use escape
-inoremap <esc> <nop>
+"inoremap <esc> <nop>
 " goto tag with enter in normal mode
 nnoremap <cr> <c-]>
 
@@ -172,7 +172,7 @@ nmap <silent> <leader>; ,c<space>
 " cd in the directory of the current buffer
 nmap <silent> <leader>cd :cd %:h<cr>
 " coffee
-nmap <silent> <leader>co :CoffeeCompile<cr>
+"nmap <silent> <leader>co :CoffeeCompile<cr>
 " Toggle paste mode on and off
 nmap <silent> <leader>p :setlocal paste!<cr>
 " turn off search highlight
