@@ -8,4 +8,6 @@ for file in .{gitignore,gitconfig,vim,vimrc,inputrc}; do
 done
 unset file
 echo ". ~/.dotfiles/.local.bash" >> ~/.bashrc
+#on os x:
+#echo ". ~/.dotfiles/.local.bash" >> ~/.bash_profile
 echo ".local.bash: linked."
