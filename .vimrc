@@ -153,10 +153,11 @@ nnoremap k gk
 " make Y more logical
 nnoremap Y y$
 " remap jk to escape in insert mode
-inoremap jk <esc>
-inoremap JK <esc>
-inoremap kj <esc>
-inoremap KJ <esc>
+inoremap jk <Esc>
+vnoremap jk <Esc>
+inoremap JK <Esc>
+vnoremap JK <Esc>
+
 " don't use escape
 "inoremap <esc> <nop>
 " goto tag with enter in normal mode

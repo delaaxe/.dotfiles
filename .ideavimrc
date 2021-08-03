@@ -1,0 +1,13 @@
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+set clipboard+=ideaput
+xnoremap p pgvy
+set surround
+set relativenumber
+set number
+inoremap <Esc> <NOP>
+inoremap jk <Esc>
+vnoremap jk <Esc>
+inoremap JK <Esc>
+vnoremap JK <Esc>
+

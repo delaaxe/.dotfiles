@@ -4,6 +4,7 @@ alias ....="cd ../../.."
 
 alias  l='ls -lhG'
 alias ll='ls -lhGa'
+alias clear='printf "\033c"'
 alias v='vim'
 alias g='git'
 

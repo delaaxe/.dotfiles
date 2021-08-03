@@ -1,4 +1,4 @@
-for file in .{gitignore,gitconfig,vim,vimrc,inputrc}; do
+for file in .{vim,vimrc,inputrc}; do
   if [ -e ~/$file ]; then
     echo "~/$file: not linked, already exists."
   else
@@ -7,7 +7,9 @@ for file in .{gitignore,gitconfig,vim,vimrc,inputrc}; do
   fi
 done
 unset file
-echo ". ~/.dotfiles/.local.bash" >> ~/.bashrc
-#on os x:
-#echo ". ~/.dotfiles/.local.bash" >> ~/.bash_profile
+
+ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+echo "source ~/.dotfiles/.local.bash" >> ~/.zshrc
 echo ".local.bash: linked."

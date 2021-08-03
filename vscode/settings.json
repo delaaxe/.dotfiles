@@ -27,6 +27,10 @@
             "after": ["<Esc>"]
         }
     ],
+    "vim.leader": "<space>",
+    "macros": {
+        "commentLine": ["editor.action.commentLine","cursorDown"]
+    },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
