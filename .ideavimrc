@@ -2,12 +2,19 @@ set clipboard+=unnamed
 set clipboard+=unnamedplus
 set clipboard+=ideaput
 xnoremap p pgvy
+set scrolloff=5 sidescrolloff=10
 set surround
 set relativenumber
 set number
+set incsearch
+set ignorecase
+set smartcase
 inoremap <Esc> <NOP>
 inoremap jk <Esc>
 vnoremap jk <Esc>
 inoremap JK <Esc>
 vnoremap JK <Esc>
-
+let mapleader=" "
+map <leader>f <Action>(ReformatCode)
+nnoremap <leader>vv :e ~/.ideavimrc<CR>
+nnoremap <leader>vr :source ~/.ideavimrc<CR>

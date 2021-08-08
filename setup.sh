@@ -1,4 +1,4 @@
-for file in .{vim,vimrc,inputrc}; do
+for file in .{vim,vimrc,ideavimrc,inputrc}; do
   if [ -e ~/$file ]; then
     echo "~/$file: not linked, already exists."
   else
