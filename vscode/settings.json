@@ -2,6 +2,7 @@
     "files.autoSave": "onFocusChange",
 	"editor.tabSize": 2,
 	"editor.lineNumbers": "relative",
+    "editor.bracketPairColorization.enabled": true,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
@@ -46,10 +47,23 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "editor.cursorStyle": "line",
     "editor.insertSpaces": false,
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
     "editor.wordWrap": "off",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.inlineSuggest.enabled": true
 }
