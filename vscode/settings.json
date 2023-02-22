@@ -1,69 +1,70 @@
 {
-    "files.autoSave": "onFocusChange",
-	"editor.tabSize": 2,
-	"editor.lineNumbers": "relative",
-    "editor.bracketPairColorization.enabled": true,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {    
-            "before": ["<leader>", "m"],
-            "after": [
-                // argent
-                "i",
-                "a", "r", "g", "e", "n", "t", ".", "<Esc>",
-                "3", "w", "c", "w",
-                "w", "a", "l", "l", "e", "t", ",", " ", "<Esc>",
-                "w"
-            ]
-        }            
-    ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["J", "K"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["J", "K"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.leader": "<space>",
-    "macros": {
-        "commentLine": ["editor.action.commentLine","cursorDown"]
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDragAndDrop": false,
-    // "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "editor.cursorStyle": "line",
-    "editor.insertSpaces": false,
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
-    "explorer.confirmDelete": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.inlineSuggest.enabled": true
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.renderWhitespace": "selection",
+  "explorer.confirmDragAndDrop": false, 
+  "explorer.confirmDelete": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [],
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "k"], "after": ["<Esc>"] },
+    { "before": ["J", "K"], "after": ["<Esc>"] }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["j", "k"], "after": ["<Esc>"] },
+    { "before": ["J", "K"], "after": ["<Esc>"] }
+  ],
+  "macros": {
+    "commentLine": ["editor.action.commentLine", "cursorDown"],
+    "sendSelectionToInteractiveWindow": ["cursorDown"]
+  },
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "svelte.enable-ts-plugin": true,
+  "solidity.telemetry": true,
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
