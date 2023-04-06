@@ -11,6 +11,8 @@
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.renderWhitespace": "selection",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
   "explorer.confirmDragAndDrop": false, 
   "explorer.confirmDelete": false,
   "github.copilot.enable": {
@@ -32,7 +34,8 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     { "before": ["j", "k"], "after": ["<Esc>"] },
-    { "before": ["J", "K"], "after": ["<Esc>"] }
+    { "before": ["J", "K"], "after": ["<Esc>"] },
+    { "before": ["<leader>", "p"], "after": ["\"", "_", "d", "P"] }
   ],
   "macros": {
     "commentLine": ["editor.action.commentLine", "cursorDown"],
